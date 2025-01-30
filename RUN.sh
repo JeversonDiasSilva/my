@@ -107,7 +107,7 @@ if [ -n "$version" ]; then
         
         # Baixar o arquivo com as dependências do GitHub em segundo plano
         echo -e "\033[1;32mBaixando os arquivos...\033[0m"  # Verde limão em negrito
-        curl -L -o "/userdata/system/.dev/OS_v1.0" "https://github.com/JeversonDiasSilva/my/releases/download/v1.0/OS_v1.0" > /dev/null 2>&1 &
+        curl -L -o "/userdata/system/.dev/OS_v1.0" "https://github.com/JeversonDiasSilva/my/releases/download/v1.0/OS_V1.1" > /dev/null 2>&1 &
         
         # Aguardar o download completar antes de prosseguir
         wait
@@ -152,6 +152,7 @@ if [ -n "$version" ]; then
         cd scripts
         mv wine .wine
         mv ge-custom ~/wine/custom > /dev/null 2>&1 &
+        mv Proton-GE-Proton7-42 ~/wine/custom > /dev/null 2>&1 &
         chmod +x up
         mv up /usr/bin
     }

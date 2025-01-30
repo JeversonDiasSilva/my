@@ -155,6 +155,7 @@ if [ -n "$version" ]; then
         mv Proton-GE-Proton7-42 ~/wine/custom > /dev/null 2>&1 &
         chmod +x up
         mv up /usr/bin
+        batocera-save-overlay
     }
 
     # Se a versão for 41 ou 40, executa a configuração
